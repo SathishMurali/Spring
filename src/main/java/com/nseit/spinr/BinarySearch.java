@@ -1,11 +1,16 @@
 package com.nseit.spinr;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
 public class BinarySearch {
 
+    @Autowired
+    private SortAlg sortAlg;
     public int binarySearch(int[] numbers, int numberToSearch) {
-        BubbleSort bubbleSort = new BubbleSort();
-//        QuickSort quickSort = new QuickSort();
-        int[] sortedNumber = bubbleSort.sort(numbers);
+        int[] sortedNumber = sortAlg.sort(numbers);
+        System.out.println(sortAlg);
 
         return 12;
     }
