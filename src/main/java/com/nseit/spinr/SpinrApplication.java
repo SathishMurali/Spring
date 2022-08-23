@@ -7,7 +7,7 @@ public class SpinrApplication {
 
     public static void main(String[] args) {
 
-        BinarySearch binarySearch = new BinarySearch();
+        BinarySearch binarySearch = new BinarySearch(new QuickSort());
 
         int result = binarySearch.binarySearch(new int[]{3, 7, 9, 12}, 7);
 //		SpringApplication.run(SpinrApplication.class, args);
